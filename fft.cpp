@@ -52,10 +52,7 @@ void multiply(vector<int> a,vector<int> b)
   vector<complex<double>> res(n);
   for(int i=0;i<n;i++)
   res[i]=a1[i]* b1[i];
-//   for(int i=0;i<n;i++)
-//   cout<<res[i]<<" ";
-//   cout<<endl;
-  
+
   dft(res,n,1);
   
   int n1=a.size()+b.size()-1;
