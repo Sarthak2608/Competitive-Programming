@@ -1,2 +1,3 @@
 https://discuss.codechef.com/t/best-known-algos-for-calculating-ncr-m/896
 
+https://codeforces.com/blog/entry/17055     //Explanation of lucas theorem and chinese remainder theorem
