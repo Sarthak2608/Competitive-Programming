@@ -20,3 +20,6 @@ template<class T> struct MaxQ {
   T empty() { return Q.empty(); }
   T size()  { return Q.size();  }
 };
+
+
+//References https://github.com/stjepang/snippets/blob/master/monotone_queue.cpp
