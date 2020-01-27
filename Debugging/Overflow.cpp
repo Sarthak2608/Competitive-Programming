@@ -7,6 +7,7 @@ return 0;
 // check a*b*c > MAX
 if( a > INT_MAX/b || a*b > INT_MAX /c)
 return 0;
+//check ab then abc
 
 //chack a*b+c>MAX
 if( a > INT_MAX/b || a*b>INT_MAX-c)
