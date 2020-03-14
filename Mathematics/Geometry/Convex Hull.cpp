@@ -10,7 +10,7 @@ struct Point
     int x, y;
 };
  
-int orientation(Point p, Point q, Point r)
+int orientation(Point p, Point q, Point r)   //It is calculating the slope( m=Mpq-Mqr) if m==2 then r is the rightmost point
 {
     int val = (q.y - p.y) * (r.x - q.x) -
               (q.x - p.x) * (r.y - q.y);
