@@ -1,4 +1,9 @@
 /*
+Application:
+https://codeforces.com/problemset/problem/58/B
+https://codeforces.com/contest/58/submission/73487849
+
+
 Finding longest path in a directed acyclic graph
 Here dp[i] stores the longest directed path from node i
 */
