@@ -7,8 +7,8 @@ int ans=0;
 void dfs(int node,int tm,int p)
 {
    // cout<<node<<endl;
-    dis[node]=tm;
-    low[node]=tm;
+    dis[node]=tm;  //discovery time of the node
+    low[node]=tm;   //stores the lowest disovered reachable node through the child
     for(auto i:v[node])
     {
        if(i[0]==p)
