@@ -6,7 +6,7 @@ Kosaraju's Algorithm:
 In the strong connected components ,all nodes are reachable to each other.
 
 First run dfs and store the path of dfs when all node are visited. then transpose the graph,run the dfs again on a random node and
-color the all the discocvered node through random node. 
+color  all discocvered node through the path of random node. 
 
 
 
