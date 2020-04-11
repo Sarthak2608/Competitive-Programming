@@ -57,7 +57,6 @@ signed main() {
 
     if(i>=mid)
     {
-      //cout<<mid<<" "<<sm<<" "<<k<<endl;
       if(sm<=k)
       {
         f=1;
@@ -66,7 +65,6 @@ signed main() {
           ans=mid;
           res=tmp;
         }
-      //  cout<<mid<<endl;
         break;
       }
     }
