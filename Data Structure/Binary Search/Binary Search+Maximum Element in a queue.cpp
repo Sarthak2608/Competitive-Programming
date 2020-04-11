@@ -1,4 +1,5 @@
 /*
+  Problem Link:https://codeforces.com/contest/514/problem/D
   Idea:Iterate all possible length l of killing consecutive elements in logN
   using binary search 
   for each each iteration ,calculate the cost of killing consecutive element 
