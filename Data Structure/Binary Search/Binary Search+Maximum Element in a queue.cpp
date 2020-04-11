@@ -4,7 +4,7 @@
   using binary search 
   for each each iteration ,calculate the cost of killing consecutive element 
   of length l using queue which maintains the maximum element in a length l.
-
+  Another Solution :https://codeforces.com/contest/514/submission/45492951
 */
 #include <bits/stdc++.h>
 using namespace std;
