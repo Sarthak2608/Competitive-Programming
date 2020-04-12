@@ -1,5 +1,8 @@
 /*
   https://codeforces.com/contest/915/problem/D
+  
+  https://codeforces.com/contest/937/problem/D
+  https://codeforces.com/contest/937/submission/76423771
 */
 #include <bits/stdc++.h>
 using namespace std;
