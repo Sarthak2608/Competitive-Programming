@@ -1,3 +1,7 @@
+/*
+https://www.spoj.com/problems/RMQSQ/
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 #define endl "\n"
