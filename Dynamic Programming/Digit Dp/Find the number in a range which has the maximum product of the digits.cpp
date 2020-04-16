@@ -1,4 +1,5 @@
 /*
+https://codeforces.com/gym/100886/problem/G
  f1=1 when the num>a & f2=1 when num<b
  first represent the first non zero digit in a
  dp[npos][nf1][nf2][0] represent the required number
