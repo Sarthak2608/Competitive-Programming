@@ -21,3 +21,9 @@ Example :
 In base 10 ,N=1430 ,
 here number of digits=1+floor(3.15)=4
 */
+/*
+ Upper bound of x return the total number of element which are less than or equal to x.
+ lower bound of x return the total number of element which are less than x.
+ 
+ 
+*/
