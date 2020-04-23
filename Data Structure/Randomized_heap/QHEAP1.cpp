@@ -30,7 +30,7 @@ int merge(int T1,int T2,int p)
   }
   if(Tree[T1].val>Tree[T2].val)
     swap(T1,T2);
-  if(rand()&1)        //Randomly merging with the child for expecting log(n) depth
+  if(rand()&1)        //Randomly merging the new tree with the child for expecting log(n) depth
     swap(Tree[T1].l,Tree[T1].r);
   Tree[T1].l=merge(Tree[T1].l,T2,T1);
   Tree[T1].par=p;
