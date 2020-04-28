@@ -3,3 +3,8 @@ https://discuss.codechef.com/t/best-known-algos-for-calculating-ncr-m/896
 https://codeforces.com/blog/entry/17055     //Explanation of lucas theorem and chinese remainder theorem
 
 https://discuss.codechef.com/t/mobius-inversion-and-multiplicative-functions-tutorial/27780 //Nice Explanation Mobius Function
+
+
+Persistant data structure
+https://www.codechef.com/JUNE17/problems/CLONEME
+https://www.codechef.com/viewsolution/32388201
