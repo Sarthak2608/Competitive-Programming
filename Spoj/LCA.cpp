@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int n,u,x,v,n1;
-vector<vector<int>> adj,dp;
+vector<vector<int>> adj,dp;  //dp[log2(n)][n]
 vector<int> visit,level,parent;
 void dfs(int node,int l,int p)
 {
@@ -41,7 +41,7 @@ void findCommonAncestor(int u,int v)
     int d=level[u]-level[v];
     while(d>0)
     {
-        jump=log(d);
+        jump=log2(d);
         u=dp[jump][u];
         d-=(1ll<<jump);
     }
@@ -49,7 +49,7 @@ void findCommonAncestor(int u,int v)
     
     while(u!=v)
     {
-        int temp=log(level[u]);
+        int temp=log2(level[u]);
         while(temp>0&&dp[temp][u]==dp[temp][v])
         {
             temp--;
@@ -69,7 +69,7 @@ int main() {
 	    cout<<"Case "<<tt<<":"<<endl;
 	    tt++;
 	    cin>>n;
-	    n1=log(n)+2;
+	    n1=log2(n)+2;
 	    dp=vector<vector<int>>(n1+1,vector<int>(n+1));
 	    adj=vector<vector<int>>(n+1);
 	    visit=vector<int>(n+1);
