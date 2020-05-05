@@ -1,25 +1,11 @@
 
 /*
- Sarthak Jain
+
 */
 #include <bits/stdc++.h>
 using namespace std;
 #define endl "\n"
 #define int long long
-int mod=1e9+7;
-int min(int a,int b){
-  return (a<b)?a:b;
-}
-int max(int a,int b){
-  return (a>b)?a:b;
-}
-int fp(int a,int b){
-  if(b==0) return 1;
-  int x=fp(a,b/2);
-  x=(x*x)%mod;
-  if(b&1) x=(x*a)%mod;
-  return x;
-}
 
 struct event
 {
@@ -106,7 +92,6 @@ signed main() {
       }
       else
       {
-        //cout<<ans<<endl;
         res[i.id]=ans;
       }
    }
