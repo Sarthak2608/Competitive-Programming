@@ -1,3 +1,6 @@
+/*
+https://codeforces.com/blog/entry/45578
+*/
 #include <bits/stdc++.h>
 using namespace std;
 #define endl "\n"
