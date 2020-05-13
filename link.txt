@@ -15,3 +15,6 @@ https://www.codechef.com/COW42020/problems/COW3D
 https://www.codechef.com/viewsolution/32403401
 https://www.codechef.com/viewsolution/32396083
 
+
+Link Cut Tree
+http://web.stanford.edu/class/archive/cs/cs166/cs166.1166/lectures/17/Small17.pdf
