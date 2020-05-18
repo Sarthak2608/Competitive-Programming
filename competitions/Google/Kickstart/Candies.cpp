@@ -1,5 +1,4 @@
 /*
-Caution:Not submitted yet
 
 https://www.youtube.com/watch?v=jlWA73MDrC4
 
@@ -119,7 +118,6 @@ signed main() {
           f1[0].add(l,-s1*ar[l]*(a+(l-1)*d));
           f1[1].add(l,-s1*ar[l]);
 
-          //cout<<-s1*ar[l]*(a+(l-1)*d)<<" "<<-s1*ar[l]<<endl;
 
           ar[l]=r;
           
@@ -127,7 +125,6 @@ signed main() {
           f1[0].add(l,s1*ar[l]*(a+(l-1)*d));
           f1[1].add(l,s1*ar[l]);
 
-          //cout<<s1*ar[l]*(a+(l-1)*d)<<" "<<s1*ar[l]<<endl;
 
       }
    }
