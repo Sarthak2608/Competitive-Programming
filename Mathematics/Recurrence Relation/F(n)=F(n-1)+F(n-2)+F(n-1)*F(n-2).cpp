@@ -3,6 +3,8 @@ https://www.codechef.com/problems/ECODOWN
 https://www.codechef.com/viewsolution/31905220
 https://codeforces.com/blog/entry/76076
 
+https://www.codechef.com/viewsolution/33162729  optimised
+
  F(n)=F(n-1)+F(n-2)+F(n-1)*F(n-2)
  (1+F(n))=(1+F(n-1))*(1+F(n-2))
  G(n)=G(n-1)*G(n-2)
