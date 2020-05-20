@@ -26,4 +26,10 @@ here number of digits=1+floor(3.15)=4
  lower bound of x return the total number of element which are less than x.
  
  
+ input x integer in a line
+   while(cin.get() != '\n')
+   {
+     cin>>a[i]
+   }
+ 
 */
