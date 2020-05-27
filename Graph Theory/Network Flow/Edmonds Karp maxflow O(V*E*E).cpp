@@ -8,6 +8,8 @@ Repeat the Process till there is no augmented path.
 
 https://www.youtube.com/watch?v=GiN3jRdgxU4  Tushar Roy
 https://www.youtube.com/watch?v=LdOnanfc5TM
+
+https://www.spoj.com/problems/MTOTALF/
 */
 #include <bits/stdc++.h>
 using namespace std;
