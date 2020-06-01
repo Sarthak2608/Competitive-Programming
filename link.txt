@@ -18,3 +18,7 @@ https://www.codechef.com/viewsolution/32396083
 
 Link Cut Tree
 http://web.stanford.edu/class/archive/cs/cs166/cs166.1166/lectures/17/Small17.pdf
+
+
+Random test generator
+https://test-case-generator.herokuapp.com/
