@@ -130,6 +130,7 @@ while(t--)
  for(int i=1;i<=n1;i++)
  {
   deg[i]=0;
+  ans[i]=0;
  }
  
  init(2*n1);
