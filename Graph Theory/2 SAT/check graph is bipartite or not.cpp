@@ -113,7 +113,7 @@ void add_force(int x)
   add_edge(x^1,x);
 }
  
-int deg[N],ans[N];
+int deg[N];
  
  
 signed main() {
@@ -130,7 +130,6 @@ while(t--)
  for(int i=1;i<=n1;i++)
  {
   deg[i]=0;
-  ans[i]=0;
  }
  
  init(2*n1);
@@ -166,14 +165,6 @@ while(t--)
     f=0;
     break;
   }
-  else if(col[node]>col[node^1])
-  {
-      ans[i]=1;
-  }
-  else 
-  {
-      ans[i]=0;
-  }
  }
  
  
@@ -185,16 +176,7 @@ while(t--)
   ++tt;
 
 
-/*
-//print color of each node
-if(f){ 
- for(int i=0;i<n1;i++)
- {
-    cout<<ans[i]<<" ";
- }
- cout<<endl;
-}
-*/
+
  
  
  }
