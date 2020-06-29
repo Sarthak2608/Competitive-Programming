@@ -46,7 +46,7 @@ void insert(int id,int l,int r,line nline)
 		return;
 	}
 	int mid=(l+r)/2;
-	if(nline.getY(l)<=bit[id].getY(l)&&nline.getY(mid)<=bit[id].getY(mid))
+	if(nline.getY(l)<=bit[id].getY(l)&&nline.getY(mid)<=bit[id].getY(mid))  //intersection point lie in [mid+1,r]
 	{
 		swap(bit[id],nline);
 		insert(2*id+1,mid+1,r,nline);
@@ -55,7 +55,7 @@ void insert(int id,int l,int r,line nline)
 	{
 		insert(2*id+1,mid+1,r,nline);
 	}
-	else if(nline.getY(r)<=bit[id].getY(r)&&nline.getY(mid+1)<=bit[id].getY(mid+1))
+	else if(nline.getY(r)<=bit[id].getY(r)&&nline.getY(mid+1)<=bit[id].getY(mid+1))  //intersection point lie in [l,mid]
 	{
 		swap(bit[id],nline);
 		insert(2*id,l,mid,nline);
