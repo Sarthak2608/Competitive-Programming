@@ -1,3 +1,6 @@
+/*
+https://codeforces.com/edu/course/2/lesson/2/2/practice/contest/269103/problem/A
+*/
 #include <bits/stdc++.h>
 using namespace std;
 #define endl "\n"
