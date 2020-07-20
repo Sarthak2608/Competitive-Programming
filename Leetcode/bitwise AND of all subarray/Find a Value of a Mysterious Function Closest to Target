@@ -1,0 +1,39 @@
+/*
+https://leetcode.com/contest/weekly-contest-198/problems/find-a-value-of-a-mysterious-function-closest-to-target/
+https://www.youtube.com/watch?v=izGTqs-4y-I
+
+set={f(l,r)} l<=r
+
+f(l,r) is and of subarray
+the size of set will be atmost nlog(max(a[i]))
+
+suppose ,x=f(i,j)
+then y=(i,j+1)
+for different y ,x will loose at least 1 bit so atmost different (number of set bit in a[i]) will produce.
+
+
+//in the code each a[i] will exist in s for atmost 60 iteration 
+
+
+
+*/
+
+class Solution {
+public:
+    int closestToTarget(vector<int>& a, int target) {
+       int ans=1e9;
+        set<int> s;
+        for(auto i:a)
+        {
+            set<int> ns;
+            ns.insert(i);
+            
+            for(auto j:s)
+                ns.insert(j&i);
+            for(auto j:ns)
+                ans=min(ans,abs(j-target));
+            s=ns;
+        }
+        return ans;
+    }
+};
