@@ -14,6 +14,11 @@ Problem:https://codeforces.com/problemset/problem/999/E
 first find the strong connected component then assume each connected component as a node and make the new graph ,solve the problem.
 Fact :In this new graph there will no cycle.
 
+
+
+Leetcode good Problem:https://leetcode.com/contest/weekly-contest-198/problems/maximum-number-of-non-overlapping-substrings/
+https://www.youtube.com/watch?v=izGTqs-4y-I
+
 */
 
 #include <bits/stdc++.h>
