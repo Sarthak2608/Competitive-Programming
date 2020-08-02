@@ -8,6 +8,25 @@ int com_double(double a,double b)
   return a>b?1:-1;
 }
 
+/**
+Dynamic array syntax
+
+1d:array
+int *x;
+x=new int[N];
+
+
+2d:array
+int **x;
+x=new int *[N];
+
+x[0]=new int[M];
+x[1]=new int[M];
+....
+
+
+**/
+
 /* 
 Rounding Functions in C++
 
