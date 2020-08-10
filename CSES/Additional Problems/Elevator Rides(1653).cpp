@@ -4,6 +4,7 @@ dp[mask] represent the number of rides required to travel for the persons whose 
 res[mask] remaining maximum capacity
 Idea: iterate all possible order to put the items in box or elevator and maintain the maximum capactiy will left
 
+https://cses.fi/problemset/task/1653/
 
 */
 #include <bits/stdc++.h>
