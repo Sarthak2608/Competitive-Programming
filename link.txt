@@ -22,3 +22,17 @@ http://web.stanford.edu/class/archive/cs/cs166/cs166.1166/lectures/17/Small17.pd
 
 Random test generator
 https://test-case-generator.herokuapp.com/
+
+
+
+/*
+Hackerearth js
+
+var allowPaste = function(e){
+  e.stopImmediatePropagation();
+  return true;
+};
+document.addEventListener('paste', allowPaste, true);
+
+
+*/
