@@ -28,10 +28,84 @@ struct edge
 
 
 const int N=2e5+5;
-vector<array<int,3>> v[N];
-int vis[N],incommingEdgeId[N];
-vector<int> cost(N);
-vector<edge> ed(N);
+
+
+class MST
+{
+public:
+    int n,m,i1;
+    vector<vector<array<int,3>>> v;
+    vector<int> vis,incommingEdgeId,cost;
+    vector<edge> ed;
+    MST(int N):v(N),vis(N),incommingEdgeId(N),cost(N),ed(N){
+
+    }
+
+    void init(int _n,int _m)
+    {
+        i1=0;
+        n=_n;
+         for(int i=1;i<=n;i++)
+         {
+            v[i].clear();
+            cost[i]=inf;
+            vis[i]=0;
+            incommingEdgeId[i]=-1;
+         }
+    }
+
+    void add_edge(int x,int y,int w)
+    {
+         ++i1;
+         ed[i1].x=x;
+         ed[i1].y=y;
+         ed[i1].w=w;
+         v[x].push_back({y,w,i1});
+         v[y].push_back({x,w,i1});     
+    }
+
+    int get_cost()
+    {
+         set<array<int,2>> s;
+         int src=1;
+         cost[src]=0;
+         s.insert({0,src});
+         int ans=0;
+         while(!s.empty())
+         {
+            int node=(*s.begin())[1];
+            s.erase(s.begin());
+            vis[node]=1;
+            ans+=cost[node];
+            for(auto i:v[node])
+            {
+                if(!vis[i[0]]&&i[1]<cost[i[0]])
+                {
+                    auto it=s.find({cost[i[0]],i[0]});
+                    if(it!=s.end())
+                    s.erase({cost[i[0]],i[0]});
+                    cost[i[0]]=i[1];
+                    s.insert({cost[i[0]],i[0]});
+                    incommingEdgeId[i[0]]=i[2];
+                }
+            }
+         }
+         return ans;
+    }
+
+    void print_mst()
+    {
+         for(int i=1;i<=n;i++)
+         {
+            if(incommingEdgeId[i]!=-1)
+            {
+                int id=incommingEdgeId[i];
+                cout<<ed[id].x<<" "<<ed[id].y<<" "<<ed[id].w<<endl;
+            }
+         }
+    }
+
+};
 
 
 
@@ -40,60 +114,18 @@ signed main() {
 
  int n,m,x,y,w;
  cin>>n>>m;
- for(int i=1;i<=n;i++)
- {
-    v[i].clear();
-    cost[i]=inf;
-    vis[i]=0;
-    incommingEdgeId[i]=-1;
- }
+ MST obj(N);
+ obj.init(n,m);
 
  for(int i=1;i<=m;i++)
  {
     cin>>x>>y>>w;
-    ed[i].x=x;
-    ed[i].y=y;
-    ed[i].w=w;
-    v[x].push_back({y,w,i});
-    v[y].push_back({x,w,i});
+    obj.add_edge(x,y,w);
  }
 
- set<array<int,2>> s;
- int src=1;
- cost[src]=0;
- s.insert({0,src});
- int ans=0;
- while(!s.empty())
- {
-    int node=(*s.begin())[1];
-    s.erase(s.begin());
-    vis[node]=1;
-    ans+=cost[node];
-    for(auto i:v[node])
-    {
-        if(!vis[i[0]]&&i[1]<cost[i[0]])
-        {
-            auto it=s.find({cost[i[0]],i[0]});
-            if(it!=s.end())
-            s.erase({cost[i[0]],i[0]});
-            cost[i[0]]=i[1];
-            s.insert({cost[i[0]],i[0]});
-            incommingEdgeId[i[0]]=i[2];
-        }
-    }
- }
- cout<<ans<<endl;
-
-/*
- for(int i=1;i<=n;i++)
- {
-    if(incommingEdgeId[i]!=-1)
-    {
-        int id=incommingEdgeId[i];
-        cout<<ed[id].x<<" "<<ed[id].y<<" "<<ed[id].w<<endl;
-    }
- }
-*/
+ 
+ cout<<obj.get_cost()<<endl;
+ //obj.print_mst();
 }
 
 /*
