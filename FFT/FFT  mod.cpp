@@ -5,12 +5,14 @@ https://github.com/Ashishgup1/Competitive-Coding/blob/master/FFT%20(Iterative).c
 just for use
 http://p.ip.fi/ultI
 
+caution : use the long double
 
 */
 
 #include <bits/stdc++.h>
 using namespace std;
 #define endl "\n"
+#define double long double
 #define int long long
 #define ar array<int,2>
 #define inf 1000000000000000000 
