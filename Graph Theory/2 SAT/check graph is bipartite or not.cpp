@@ -1,6 +1,9 @@
 /*
   https://www.youtube.com/watch?v=0nNYy3rltgA
   https://www.spoj.com/problems/BUGLIFE/
+  
+  https://codeforces.com/problemset/problem/468/B
+  https://codeforces.com/contest/468/submission/94511145
 */
 #include <bits/stdc++.h>
 using namespace std;
