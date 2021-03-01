@@ -1,0 +1,3 @@
+/*
+In hackerearth use the Marialdb syntax instead of SQL syntax.
+*/
