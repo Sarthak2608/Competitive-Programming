@@ -1,3 +1,6 @@
+/*
+Hackerearth: Use mariadb Syntax in sql queries
+*/
 
 int com_double(double a,double b)
 {
