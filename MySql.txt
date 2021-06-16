@@ -1,3 +1,14 @@
 /*
 In hackerearth use the Marialdb syntax instead of SQL syntax.
+
+
+
+https://leetcode.com/problems/capital-gainloss/submissions/
+ SELECT stock_name,SUM(price*IF(operation="Buy",-1,1)) as capital_gain_loss from Stocks group by stock_name
+
+ SELECT stock_name, SUM(CASE WHEN operation='Buy' THEN -1*price 
+ WHEN operation = 'Sell' THEN price END) AS capital_gain_loss
+ FROM Stocks
+ GROUP BY stock_name;
+
 */
