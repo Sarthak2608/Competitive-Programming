@@ -11,4 +11,12 @@ https://leetcode.com/problems/capital-gainloss/submissions/
  FROM Stocks
  GROUP BY stock_name;
 
+
+
+
+
+https://leetcode.com/problems/running-total-for-different-genders/   
+Cumalative sum query
+
+SELECT gender,day,sum(score_points) OVER(partition by gender order by day) as total from Scores Group by gender,day Order by gender,day
 */
