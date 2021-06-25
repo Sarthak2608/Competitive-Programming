@@ -19,6 +19,7 @@ https://leetcode.com/problems/capital-gainloss/submissions/
 SELECT COALESCE((SELECT Distinct Salary as SecondHighestSalary from Employee where 1 order by Salary Desc Limit 1,1),null) as SecondHighestSalary from dual
 
 
+* select round(3.555,2) from dual  //it will round the value upto 2 decimal places
 
 
 https://leetcode.com/problems/running-total-for-different-genders/   
