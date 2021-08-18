@@ -1,0 +1,22 @@
+int largestSquareArea(vector<int>& h) {
+    stack<array<int,2>> s;
+    int ans=0;
+    for(int i=0;i<h.size();i++){
+        int x=i;
+        while(s.size()>0&&h[i]<s.top()[0]){
+            x=min(x,s.top()[1]);
+            int z=min(s.top()[0],(i-s.top()[1]));
+            ans=max(ans,z*z);
+            s.pop();
+        }
+        s.push({h[i],x});
+    }     
+    while(s.size()>0){
+        // cout<<s.top()[0]<<" "<<s.top()[1]<<endl;
+        int z=min(s.top()[0],(h.size()-s.top()[1]));
+        ans=max(ans,z*z);
+        s.pop();
+    }
+    return ans;
+}
+ 
