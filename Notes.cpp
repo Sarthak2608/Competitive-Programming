@@ -1,4 +1,8 @@
 /*
+#pragma GCC target("popcnt")
+*/
+
+/*
 Hackerearth: Use mariadb Syntax in sql queries
 */
 
